@@ -24,18 +24,18 @@ public class ColorFullProgress extends ProgressBar {
     private static final int ATTR_TEXT_OFFSET    = 10; //dp
 
     //属性的成员变量
-    private int mUnreachColor  = ATTR_UNREACH_COLOR;
-    private int mUnreachHeight = dp2px(ATTR_UNREACH_HEIGHT);
-    private int mReachColor    = ATTR_REACH_COLOR;
-    private int mReachHeight   = dp2px(ATTR_REACH_HEIGHT);
-    private int mTextColor     = ATTR_TEXT_COLOR;
-    private int mTextSize      = sp2px(ATTR_TEXT_SIZE);
-    private int mTextOffset    = dp2px(ATTR_TEXT_OFFSET);
+    protected int mUnreachColor  = ATTR_UNREACH_COLOR;
+    protected int mUnreachHeight = dp2px(ATTR_UNREACH_HEIGHT);
+    protected int mReachColor    = ATTR_REACH_COLOR;
+    protected int mReachHeight   = dp2px(ATTR_REACH_HEIGHT);
+    protected int mTextColor     = ATTR_TEXT_COLOR;
+    protected int mTextSize      = sp2px(ATTR_TEXT_SIZE);
+    protected int mTextOffset    = dp2px(ATTR_TEXT_OFFSET);
 
-    private Paint mPaint;
+    protected Paint mPaint;
 
     //控件的宽度
-    private int mProgressBarWidth;
+    protected int mProgressBarWidth;
 
     public ColorFullProgress(Context context) {
         this(context, null);
@@ -139,7 +139,7 @@ public class ColorFullProgress extends ProgressBar {
     }
 
     //单位转换
-    private int dp2px(int dp) {
+    protected int dp2px(int dp) {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, getResources().getDisplayMetrics());
     }
 

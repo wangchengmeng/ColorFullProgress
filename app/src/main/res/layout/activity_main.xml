@@ -7,31 +7,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.meng.interest.recyclerviewdemo.ColorFullProgress
-        android:id="@+id/cfp"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:max="100"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:progress="30"
-        app:progress_unreach_height="20dp"
-        app:progress_reach_height="10dp"
-        app:progress_reach_color="#ffff0000"
-        app:progress_text_offset="5dp"
-        app:progress_text_size="15sp"
-        app:progress_unreach_color="#ff00ffff"/>
-
-    <com.meng.interest.recyclerviewdemo.ColorFullProgress
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:max="100"
-        android:padding="10dp"
-        android:progress="100"
-        app:progress_reach_color="#ffff00ff"
-        app:progress_text_offset="5dp"
-        app:progress_text_size="15sp"
-        app:progress_unreach_color="#ffffff00"/>
 
     <com.meng.interest.recyclerviewdemo.ColorFullProgress
         android:layout_width="match_parent"
@@ -44,8 +19,36 @@
         app:progress_reach_height="10dp"
         app:progress_text_color="#ff000000"
         app:progress_text_offset="5dp"
-        app:progress_unreach_height="10dp"
         app:progress_text_size="12sp"
-        app:progress_unreach_color="#ff00ffff"/>
+        app:progress_unreach_color="#ff00ffff"
+        app:progress_unreach_height="10dp"/>
+
+    <com.meng.interest.recyclerviewdemo.CircleProgress
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:progress="20"
+        app:circle_radio="60dp"
+        app:progress_reach_color="#ffffff00"
+        app:progress_reach_height="5dp"
+        app:progress_text_color="#ff000000"
+        app:progress_text_size="12sp"
+        app:progress_unreach_color="#ff00ffff"
+        app:progress_unreach_height="2dp"/>
+
+    <com.meng.interest.recyclerviewdemo.CircleProgress
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:progress="80"
+        app:circle_radio="40dp"
+        app:progress_reach_color="#ffff0000"
+        app:progress_reach_height="5dp"
+        app:progress_text_color="#ff000000"
+        app:progress_text_size="12sp"
+        app:progress_unreach_color="#ff000000"
+        app:progress_unreach_height="2dp"/>
 
 </LinearLayout>
